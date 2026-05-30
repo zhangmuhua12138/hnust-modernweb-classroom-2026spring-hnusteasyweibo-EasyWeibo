@@ -1,0 +1,53 @@
+<!-- publish.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布动态 - 我的社交圈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="site-header">
+        <div class="logo">社交圈</div>
+        <nav class="navbar">
+            <a href="index.html">主页</a>
+            <a href="publish.html" class="active">发布动态</a>
+            <a href="profile.html">个人主页</a>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container">
+        <div class="card publish-card">
+            <h2>分享此刻的想法...</h2>
+            
+            <!-- 发布表单 -->
+            <form id="publish-form">
+                <!-- 内容输入框 -->
+                <textarea 
+                    id="post-content" 
+                    placeholder="你想说点什么？（必填）" 
+                    rows="4" 
+                    required
+                ></textarea>
+
+                <!-- 图片链接输入（可选） -->
+                <input 
+                    type="text" 
+                    id="post-image" 
+                    placeholder="图片链接 (可选，例如：https://example.com/photo.jpg)" 
+                    class="image-input"
+                >
+
+                <!-- 提交按钮 -->
+                <button type="submit" class="btn-primary">发布动态</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- 引入脚本文件 -->
+    <script src="script.js"></script>
+</body>
+</html>

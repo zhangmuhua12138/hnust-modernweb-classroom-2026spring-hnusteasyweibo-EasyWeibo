@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的社交圈 - 主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="site-header">
+        <div class="logo">社交圈</div>
+        <nav class="navbar">
+            <a href="index.html" class="active">主页</a>
+            <a href="publish.html">发布动态</a>
+            <a href="profile.html">个人主页</a>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container">
+        <h2>最新动态</h2>
+
+        <!-- 动态列表容器：JS 将自动把内容渲染到这里 -->
+        <div id="feed-container">
+            <!-- 这里的动态卡片将由 script.js 自动生成 -->
+            <!-- 示例结构（加载时会显示，JS执行后会被替换） -->
+            <p>正在加载动态...</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        © 2026 我的社交圈项目练习
+    </footer>
+
+    <!-- 引入脚本文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
